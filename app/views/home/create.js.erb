@@ -1,0 +1,15 @@
+var chart_data = '<%= @chart_data.to_json.html_safe %>';
+var chart = c3.generate({
+    data: {
+        x: 'x',
+        columns: JSON.parse(chart_data)
+    },
+    axis: {
+        x: {
+            type: 'timeseries',
+            tick: {
+                format: '%Y-%m-%d'
+            }
+        }
+    }
+});

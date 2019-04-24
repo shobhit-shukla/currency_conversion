@@ -1,0 +1,17 @@
+@import 'bootstrap';
+@import 'bootstrap-datepicker';
+@import 'c3';
+
+.form-inline .form-group{
+	margin-right: 2rem;
+}
+
+.top-body{
+	padding: 2rem 0;
+	margin-bottom: 5rem;
+}
+
+.container{
+	min-height: 50rem;
+	background: #f0f8ff;
+}
