@@ -5,8 +5,6 @@ ruby '2.5.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -29,6 +27,8 @@ gem 'c3-rails'
 gem 'bootstrap'
 gem 'bootstrap-datepicker-rails'
 
+# Use pg as the database for Active Record
+gem 'pg'
 
 # Use Redis adapter to run Action Cable in production
 gem 'faraday', '~> 0.9.2'
@@ -43,7 +43,7 @@ gem 'faraday', '~> 0.9.2'
 # gem 'capistrano-rails', group: :development
 
 # Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '>= 1.1.0', require: false
+# gem 'bootsnap', '~> 1.3.2', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
