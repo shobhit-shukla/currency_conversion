@@ -11,9 +11,6 @@ gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
-# See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'mini_racer', platforms: :ruby
-
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -23,23 +20,18 @@ gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
 gem "d3-rails", '~> 3'
 gem 'c3-rails'
-
 gem 'bootstrap'
 gem 'bootstrap-datepicker-rails'
-
 # Use pg as the database for Active Record
 gem 'pg'
-
-# Use Redis adapter to run Action Cable in production
 gem 'faraday', '~> 0.9.2'
-# gem 'redis', '~> 4.0'
-# Use ActiveModel has_secure_password
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails', '~> 3.8'
   gem 'rails-controller-testing'
+  gem "factory_bot_rails"
 end
 
 group :development do
