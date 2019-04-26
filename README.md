@@ -1,24 +1,18 @@
-# README
+# Currency Converter
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Implements Foreign exchange rates API at 
+https://exchangeratesapi.io/
+
+And display timeseries chart using C3 js
+https://c3js.org/samples/timeseries.html
+
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version : 2.5.1
 
-* System dependencies
+* How to run the test suite : rspec
 
-* Configuration
+* Services : CurrencyConvertService
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Deployment instructions : git push heroku master
